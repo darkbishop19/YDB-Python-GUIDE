@@ -2,7 +2,7 @@ from datetime import date, datetime, timedelta
 
 from connect import forecast
 
-# add 1 element
+'''add 1 element'''
 #
 # response = forecast.put_item(
 #     Item = {
@@ -16,7 +16,7 @@ from connect import forecast
 
 
 
-#add 1 element with row data
+'''add 1 element with row data'''
 
 # response = forecast.put_item(
 #     Item = {
@@ -30,7 +30,7 @@ from connect import forecast
 # )
 
 
-# add several elements
+''' add several elements '''
 #
 # Items = [
 #     {
@@ -82,7 +82,7 @@ from connect import forecast
 #         }
 #     )
 
-#add element with row data to test update and put item methods
+''' add element with row data to test update and put item methods '''
 # response = forecast.put_item(
 #     Item={
 #         'weather': 'rain',

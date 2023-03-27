@@ -2,7 +2,7 @@ from boto3.dynamodb.conditions import Key, Attr
 
 from connect import forecast
 
-# delete 1 item
+''' delete 1 item '''
 # with forecast.batch_writer() as batch:
 #     batch.delete_item(
 #         Key={
@@ -12,7 +12,7 @@ from connect import forecast
 #     )
 
 
-# delete all items with certain expression
+''' delete all items with certain expression '''
 # scan = forecast.scan(
 #     FilterExpression=Attr('weather').eq('sunny')
 # )
@@ -28,7 +28,7 @@ from connect import forecast
 #                 }
 #             )
 
-# delete all items
+''' delete all items '''
 # scan = forecast.scan()
 # with forecast.batch_writer() as batch:
 #     for each in scan['Items']:

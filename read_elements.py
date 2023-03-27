@@ -2,7 +2,7 @@ from boto3.dynamodb.conditions import Attr
 
 from connect import forecast
 
-#get items with some expressions
+'''get items with some expressions'''
 scan = forecast.scan(
     FilterExpression = Attr('weather').contains('sunny') and Attr('temperature').eq('11')
 )

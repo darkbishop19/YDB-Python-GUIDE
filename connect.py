@@ -10,5 +10,5 @@ database = boto3.resource(
     aws_secret_access_key = config.AWS_SECRET_KEY
 )
 
-forecast = database.Table('forecast')
+forecast = database.Table('ИМЯ ВАШЕЙ ТАБЛИЦЫ')
 
