@@ -91,6 +91,3 @@ from connect import forecast
 #     }
 # )
 
-print(datetime.now().strftime("%H:%M:%S"))
-print(date.today())
-print(date.today()+timedelta(days=1))
