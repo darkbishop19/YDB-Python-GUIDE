@@ -36,35 +36,36 @@ from connect import forecast
 #     {
 #         'weather': "rain",
 #         'number': "3",
-#         'data': f"{date.today()+timedelta(days=2)}",
+#         'date': f"{date.today()+timedelta(days=2)}",
 #         'temperature': "-3",
-#         'time': f'{datetime.now().strftime("%H:%M:%S")}'
+#         'time': f'{datetime.now().strftime("%H:%M:%S")}',
+#         'data': 'some data',
 #     },
 #     {
 #         'weather': "neutral",
 #         'number': "4",
-#         'data': f"{date.today()+timedelta(days=3)}",
+#         'date': f"{date.today()+timedelta(days=3)}",
 #         'temperature': "0",
 #         'time': f'{datetime.now().strftime("%H:%M:%S")}'
 #     },
 #     {
 #         'weather': "rain",
 #         'number': "5",
-#         'data': f"{date.today()+timedelta(days=4)}",
+#         'date': f"{date.today()+timedelta(days=4)}",
 #         'temperature': "4",
 #         'time': f'{datetime.now().strftime("%H:%M:%S")}'
 #     },
 #     {
 #         'weather': "sunny",
 #         'number': "6",
-#         'data': f"{date.today()+timedelta(days=5)}",
+#         'date': f"{date.today()+timedelta(days=5)}",
 #         'temperature': "11",
 #         'time': f'{datetime.now().strftime("%H:%M:%S")}'
 #     },
 #     {
 #         'weather': "sunny",
 #         'number': "7",
-#         'data': f"{date.today()+timedelta(days=6)}",
+#         'date': f"{date.today()+timedelta(days=6)}",
 #         'temperature': "12",
 #         'time': f'{datetime.now().strftime("%H:%M:%S")}'
 #     },
@@ -75,12 +76,20 @@ from connect import forecast
 #         Item={
 #             'weather': i['weather'],
 #             'number': i['number'],
-#             'data': i['data'],
+#             'date': i['date'],
 #             'temperature': i['temperature'],
 #             'time': i["time"]
 #         }
 #     )
 
+#add element with row data to test update and put item methods
+# response = forecast.put_item(
+#     Item={
+#         'weather': 'rain',
+#         'number': '3',
+#         'data': 'akward'
+#     }
+# )
 
 print(datetime.now().strftime("%H:%M:%S"))
 print(date.today())
